@@ -1,0 +1,537 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#body-header{
+    height: 70vh;
+    width: 100vw;
+    opacity: .8;
+    background-image: url(/images/apple-macbook-airbook-computer-mouse-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin:0px;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 10px 10px 0px;
+}
+
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-menu{
+    padding-top: 15px;
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 5s ;
+}
+
+.nav-menu li a:hover{
+    color:darkgrey;
+    border-bottom: 1.5px solid darkgrey;
+}
+
+.Social-name-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 18vh;
+}
+
+.social-section li a i{
+    padding:10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: box-shadow 0.2s;
+}
+
+.social-section li a i:hover{
+    box-shadow: 0px 0px 5px 5px rgba(230,196,196,0.2);
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n+1){
+    background-color:white;
+}
+
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height:12rem;
+    width:12rem;
+    margin: auto;
+    margin-top: -18vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+    box-shadow: 0px 0px 2px 2px aliceblue;
+}
+
+
+#about-div{
+    margin-top: 5vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#about-me{
+    width: 75%;
+    font-size: 20px;
+    background-color: #9e9b9b29;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2857a4;
+    line-height: 1.2;
+    padding: 20px;
+    border-radius: 2%;
+    border: 5px solid darkgrey;
+    box-shadow: 0px 0px 5px 5px darkgrey;
+} 
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin:10px auto;
+    font-weight: 400;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color:#2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right:0.5rem;
+}
+
+
+.fourty-percent{
+    width:40%;
+    height: inherit;
+}
+
+
+.sixty-percent{
+    width: 60%;
+    height: inherit;
+}
+
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+}
+
+
+.skills-display{
+    width: 80%;
+    height: 50%; 
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 2px #b9b9b9 inset;
+    margin: 25px;
+    overflow:hidden;
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+.mb-orange{
+    background-color: #ec4d1c;
+}
+
+.mb-teal{
+    background-color: #0b8176;
+}
+
+.mb-light-purple{
+    background-color: #93738c;
+}
+
+/* Portfolio Section */
+
+.portfolio-display{
+    width: 90%;
+    box-sizing: border-box;
+    padding:0px 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-image-container{
+    max-width: 20rem;
+    height: 15rem;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.portfolio-image-container img{
+    width:100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+#contact{
+    width: 100%;
+    background-image:linear-gradient(to top right,#2857a4,#403066 70%);
+}
+
+.contact-section{
+    width:75%;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contact-me{
+    width: 40%;
+    position: relative;
+} 
+
+#contact-me input[type="text"] {
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white; 
+    width: 100%;
+}
+
+#contact-me textarea {
+    background-color:transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+#submit-container{
+    text-align: center;
+}
+
+#submit-container button{
+    margin-top: 2rem;
+    background-color:transparent;
+    border-color: white;
+    color: white;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    border-width: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    transition: color 0.5s , background-color 1s;
+}
+
+#submit-container button:hover{
+    color: #2857a4;
+    background-color:white;
+
+}
+
+.contact-info{
+    width: 40%;
+    min-width: 20rem;
+    padding-left: 10%;
+    position: relative;
+}
+
+.contact-info H5{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px;
+    color: white;
+}
+
+.contact-info p{
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 10px;
+    color: white;
+}
+
+.contact-info span{
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-bottom: -20px ;
+    color: white;
+}
+
+.contact-info span i{
+    margin-left: 8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+#timeline{
+    width: 80%;
+    position: relative;
+    /* border: 2px solid black; */
+    margin-bottom: 3%;
+}
+
+.timeline-box{
+    min-height: 150px;
+    width: 40%;
+    left: 5%;
+    position: relative;
+    margin: 10px;
+    text-align: right;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 2px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+    margin-top: -35px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* .timeline-box:nth-child(2n+1):after{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -11%;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: darkgrey;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: -11%;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: darkgrey;
+    z-index: 1;
+} */
+
+.timeline-box::before{
+    content: "";
+    background-image: url(images/document-certificate.png);
+    background-size: cover;
+    position: absolute;
+    top:10%;
+    height: 2.5rem;
+    width: 2.5rem;
+    left: 2%;
+}
+
+.timeline-box h5{
+    font-size: 1.3rem;
+    height: auto;
+    margin: 2% 2% 0 30%;
+    font-family: sans-serif;
+
+    overflow: hidden;
+    color:#2857a4;
+}
+
+.degree-heading{
+    font-size: 0.8rem;
+    margin: 0.5% 2% 0 25%;
+    font-family: sans-serif;
+
+    overflow: hidden;
+    color:#2857a4;
+}
+
+.institute-name{
+    font-size: 1.1rem;
+    margin: 0.5% 2% 0 25%;
+    font-family: sans-serif;
+    overflow: hidden;
+    color: #eb822d;;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-size: 1.0rem;
+    margin: 0.5% 2% 0 25%;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -9.3% !important;
+    }
+
+    .timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
