@@ -8,17 +8,76 @@ body{
     height: 70vh;
     width: 100vw;
     opacity: .8;
-    background-image: url(/images/apple-macbook-airbook-computer-mouse-wallpaper-preview.jpg);
+    background-image: url(images/apple-macbook-airbook-computer-mouse-wallpaper-preview.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+#menu-toggle{
+    color: white;
+    margin: 0;
+    padding: 2%;
+    display: none;
+}
+
+#menu-toggle i{
+    font-size: 2rem;
+}
+
+.no-design{
+    margin: 0;
+    display: none;
+    background-color: #7a7d5d;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.no-design ul{
+    margin: 0rem 0rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+    height: auto;
+}
+
+
+.dropdown-menu:hover .no-design{
+    display: block;
+    position: absolute;
+    width: 100%;
+    right: 0%;
+}
+
+.no-design ul li{
+    margin: 0.1rem 0px 0.6rem 0px;
+    height: 1.8rem;
+}
+
+.no-design li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.no-design li a:hover{
+    background-color: #64674a;
+}
+
+  
+  /* Styling for the menu icon */ 
+.menu-icon {
+    display: none;  
+  }
+
 .horizontal-list{
     list-style: none;
     padding-left: 0px;
     margin:0px;
-    
 }
 
 .text-center{
@@ -99,7 +158,7 @@ section:nth-child(2n){
     height:12rem;
     width:12rem;
     margin: auto;
-    margin-top: -15vh;
+    margin-top: -18vh;
 }
 
 #my-image img{
@@ -414,10 +473,6 @@ button:focus {
     z-index: 2;
 }
 
-.text-justify {
-    text-align: justify;
-}
-
 /* .timeline-box:nth-child(2n+1):after{
     content: "";
     border-radius: 50%;
@@ -496,16 +551,31 @@ button:focus {
     line-height: 20px;
 }
 
-
-
+.text-justify {
+    text-align: justify;
+}
 
 @media only screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    .nav-menu li{
+        display:none;
+    }
+    
+    #contact-me{
+        width: 80%;
+        position: relative;
+    } 
+
     #my-image{
         height:12rem;
         width:12rem;
         margin: auto;
-        margin-top: -12vh;
+        margin-top: -14vh;
     }
+
 
     .timeline-box {
         width: 90%;
